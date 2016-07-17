@@ -1,0 +1,117 @@
+
+body { background-color: #212121; color: #FAFAFA; }
+a, a:active, a:hover, a:focus { color: #FAFAFA; }
+b, strong { font-weight: 500; }
+.poll-title { margin-top: 0; }
+.navbar { border: none; }
+
+
+.navbar .nav>li>a { color: #9E9E9E; }
+.navbar .nav>li>a:focus, .navbar .nav>li>a:hover { background-color: transparent !important; color: #FAFAFA;}
+.navbar .navbar-btn { margin-left: 15px; }
+
+.navbar .nav .open>a, .navbar .nav .open>a:focus, .navbar .nav .open>a:hover { background-color: transparent; color: #FAFAFA; }
+
+.dropdown-menu { border: none; font-size: 0.875em; }
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover { color: #616161; }
+.navbar-nav>li>.dropdown-menu { border-top-left-radius: 4px; border-top-right-radius: 4px; }
+.navbar-toggle .icon-bar { background-color: #FAFAFA; }
+
+.submenu { font-size: 0.875em; list-style: none; padding-left: 0; margin-top: 0; min-width: 220px; }
+.submenu a { display: block; padding: 3px 30px; color: #333;}
+.submenu a:hover { text-decoration: none; color: #616161; background-color: #F5F5F5; }
+
+.navbar-nav>li.navbar-search { display: none; }
+
+.navbar-form { border: none; box-shadow: none; }
+.navbar-form .form-control { background: transparent; border-radius: 0; border-color: transparent; border-bottom-color: #616161; }
+.navbar-form .form-control:focus { border-color: transparent; border-bottom-color: #616161; box-shadow: none; color: #FAFAFA; }
+.navbar-form button.form-control { display: none; }
+
+
+.page-header { border-bottom-color: #616161; }
+
+
+.link { text-decoration: underline; }
+
+
+
+ol { margin: 0; padding: 0; }
+
+p.text-muted { color: #9E9E9E; }
+
+.panel { background-color: #424242; }
+.panel-body { padding: 15px 25px; }
+
+hr { border-top-color: #616161; }
+
+
+input { color: #333; }
+
+.results { margin-top: 8px; }
+
+dt, dt a, dt a:hover, dt a:active, dt a:focus { color: #5cb85c; }
+dl.poll dd { margin-bottom: 30px; }
+
+dd span.label { color: #5cb85c; }
+
+/* Use this selector to override bar styles on bar charts. Bars are also strokes so you have maximum freedom in styling them. */
+.ct-bar { stroke: #5cb85c !important; }
+.ct-line, .ct-point { stroke: #5cb85c !important;  }
+
+.ct-series-a .ct-slice-pie { fill: hsl(120,39%,54%) !important; }
+.ct-series-b .ct-slice-pie { fill: hsl(120,39%,64%) !important; }
+.ct-series-c .ct-slice-pie { fill: hsl(120,39%,74%) !important; }
+.ct-series-d .ct-slice-pie { fill: hsl(120,39%,84%) !important; }
+
+
+.ct-label { color: #FAFAFA; font-size: 0.75em; }
+.ct-grid { stroke: #333; }
+text.ct-label { fill: #212121 !important; }
+
+
+.or-hr { margin-bottom: -20px; }
+.or-txt { background-color: #fff; display: inline-block; padding: 6px 10px; margin: 0 50% 0 0;}
+hr.gap { border-top-color: transparent; }
+
+
+.modal-content { color: #212121 !important; }
+
+.close { color: #d9534f; opacity: 1; text-shadow: none; line-height: 0.75; display: none; }
+.close:focus, .close:hover { color: #FAFAFA; opacity: 1; }
+.radio:hover .close { display: block; }
+
+.radio.checked { color: #5cb85c; }
+
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+	border-top-color: #333; 
+}
+.table>thead>tr>th {
+	border-bottom-color: #333; 
+}
+
+@media screen and (max-width: 767px) {
+	.table-responsive {
+		border:none;
+	}
+}
+
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus { outline: none; }
+.btn.active, .btn:active { box-shadow: none; }
+.btn-cancel { color: #9E9E9E; }
+.btn.focus, .btn:focus, .btn:hover { color: #FAFAFA; }
+
+.nav-pills a { color: #9E9E9E; }
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover { background-color: #5cb85c; }
+.nav-pills.nav>li>a:hover { background-color: transparent !important; color: #FAFAFA;}
+
+.auth-form h4 { margin-bottom: 30px;  }
+.auth-form input.form-control { background-color: transparent; border: none; border-bottom: thin solid #616161; border-radius: 0; color: #FAFAFA; box-shadow: none; }
+.auth-form input.form-control:focus { box-shadow: none; }
+.auth-form .panel-body { padding-bottom: 25px; }
+
+
+.footer ul { list-style: none; padding-left: 0; margin-top: 0; }
+.footer li { display: inline-block; margin-right: 15px; }
+
