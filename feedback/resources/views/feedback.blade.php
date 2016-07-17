@@ -9,6 +9,7 @@
 				<th>ID</th>
 				<th>From</th>
 				<th>Time</th>
+				<th>Grade / Subject</th>
 				<th>Message</th>
 				<th>Comment</th>
 			</thead>
@@ -18,6 +19,7 @@
 				<td>{{$f->id}}</td>
 				<td>{{$f->sender_num}}</td>
 				<td>{{date('j F Y', $f->time)}}</td>
+				<<td>{{$f->subject}} ({{$f->grade}})</td>
 				<td>{{$f->text}}</td>
 				<td>
 					<form class="form-inline">
