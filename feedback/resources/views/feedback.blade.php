@@ -10,7 +10,7 @@
 	<tr>
 		<td>{{$f->id}}</td>
 		<td>{{$f->sender_num}}</td>
-		<td>{{date('j F Y', strtotime($f->time))}}</td>
+		<td>{{date('j F Y', $f->time)}}</td>
 		<td>{{$f->text}}</td>
 	</tr>
 @endforeach
