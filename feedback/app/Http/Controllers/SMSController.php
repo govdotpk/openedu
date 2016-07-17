@@ -25,8 +25,7 @@ class SMSController extends Controller
 	    			'time'	=> $msg[0]->time,
 	    			'text'	=> $msg[0]->text,
 	    		]);
-	    	return $feedback->sender_num;
-	    	return $this->send_sms($feedback->sender_num, $feedback->receiver_num, 'Thank you for your feedback.');
+	    	$this->send_sms($feedback->sender_num, $feedback->receiver_num, 'Thank you for your feedback.');
     	}
 
     	$all = Feedback::all();
