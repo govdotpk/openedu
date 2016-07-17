@@ -25,7 +25,7 @@ class SMSController extends Controller
 	    			'time'	=> $msg[0]->time,
 	    			'text'	=> $msg[0]->text,
 	    		]);
-	    	$this->send_sms($feedback->sender_num, $feedback->receiver_num, 'Thank you for your feedback.');
+	    	$this->send_sms($feedback->sender_num, 'Thank you for your feedback.');
     	}
 
     	$all = Feedback::all();
@@ -48,7 +48,7 @@ class SMSController extends Controller
 		return $sessionid;
 	}
 
-	private function send_sms($receivenum, $sendernum, $textmessage)
+	private function send_sms($receivenum, $textmessage)
 	{
 		$session_id = $this->get_session();
 
