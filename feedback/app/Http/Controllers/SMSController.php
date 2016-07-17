@@ -16,6 +16,7 @@ class SMSController extends Controller
     	$msg = json_decode($msg)->status;
 
     	if (count($msg))
+    	{
 	    	$feedback = Feedback::create([
 	    			'id'	=> $msg[0]->id,
 	    			'sender_num'	=> $msg[0]->sender_num,
@@ -24,6 +25,9 @@ class SMSController extends Controller
 	    			'time'	=> $msg[0]->time,
 	    			'text'	=> $msg[0]->text,
 	    		]);
+
+	    	$this->send_sms($feedback->receiver_num, $feedback->sender_num, 'Thank you for your feedback.');
+    	}
 
     	$all = Feedback::all();
 
@@ -45,7 +49,19 @@ class SMSController extends Controller
 		return $sessionid;
 	}
 
-	function receive_sms()
+	private function send_sms($receivenum, $sendernum, $textmessage)
+	{
+		$session_id = $this->get_session();
+
+		$data=file_get_contents("http://api.smilesn.com/sendsms?sid=".$session_id."&receivenum=".$receivenum."&sendernum=8333&textmessage=".$textmessage);
+
+		$data2=json_decode($data);
+		$response_status=$data2->status;
+
+		return $response_status;
+	}
+
+	private function receive_sms()
 	{
 		$session_id = $this->get_session();
 
