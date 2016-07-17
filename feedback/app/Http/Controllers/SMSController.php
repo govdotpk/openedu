@@ -26,7 +26,7 @@ class SMSController extends Controller
 	    			'text'	=> $msg[0]->text,
 	    		]);
 
-	    	return preg_replace('@\+92@', '0', $feedback->sender_num);
+	    	// return preg_replace('@\+92@', '0', $feedback->sender_num);
 
 	    	$this->send_sms(preg_replace('@\+92@', '0', $feedback->sender_num), 'Thank you for your feedback.');
     	}
