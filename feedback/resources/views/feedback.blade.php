@@ -19,7 +19,7 @@
 				<td>{{$f->id}}</td>
 				<td>{{$f->sender_num}}</td>
 				<td>{{date('j F Y', $f->time)}}</td>
-				<<td>{{$f->subject}} ({{$f->grade}})</td>
+				<td>{{$f->subject}} ({{$f->grade}})</td>
 				<td>{{$f->text}}</td>
 				<td>
 					<form class="form-inline">
